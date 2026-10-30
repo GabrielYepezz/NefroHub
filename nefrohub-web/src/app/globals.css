@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+  --font-data: var(--font-data);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Cores Principais do NefroHub */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-primary-foreground: var(--primary-foreground);
+
+  /* Superfícies e Cards */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* Bordas e Controles */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Estados Clínicos */
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-bg: var(--destructive-bg);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-info: var(--info);
+  --color-info-bg: var(--info-bg);
+  --color-info-foreground: var(--info-foreground);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Gráficos Clínicos */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Escala de Raio de Borda Moderada (Clean & Moderna) */
+  --radius-xs: 0.25rem;
+  --radius-sm: calc(var(--radius) * 0.7);
+  --radius-md: calc(var(--radius) * 0.85);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.3);
+  --radius-2xl: calc(var(--radius) * 1.6);
+}
+
+:root {
+  /* =========================================================================
+     PALETA DE SAÚDE NEFROHUB: Azul-Petróleo Suave, Neutros Acolhedores & Alta Legibilidade
+     ========================================================================= */
+  --primary: #367C83;           /* Azul-petróleo suave */
+  --primary-hover: #2B676D;     /* Azul-petróleo tom escuro para hover */
+  --primary-light: #E8F3F2;     /* Fundo suave primário */
+  --primary-foreground: #FFFFFF;
+
+  --background: #F7F9FA;        /* Cinza claro ultra-limpo */
+  --foreground: #24323A;        /* Grafite profundo de alta legibilidade */
+
+  --card: #FFFFFF;
+  --card-foreground: #24323A;
+  --popover: #FFFFFF;
+  --popover-foreground: #24323A;
+
+  --secondary: #F0F4F6;
+  --secondary-foreground: #24323A;
+
+  --muted: #F0F4F6;
+  --muted-foreground: #687780;  /* Cinza médio suave para hierarquia secundária */
+
+  --accent: #E8F3F2;
+  --accent-foreground: #2B676D;
+
+  --border: #E4EAED;           /* Bordas sutis e limpas */
+  --input: #D2DCE0;
+  --ring: #367C83;
+
+  /* Estados Clínicos */
+  --success: #3F8068;
+  --success-bg: #EAF5EF;
+  --success-foreground: #275A47;
+
+  --warning: #A97732;
+  --warning-bg: #FBF3E5;
+  --warning-foreground: #674719;
+
+  --destructive: #B95353;
+  --destructive-bg: #FAECEC;
+  --destructive-foreground: #6B2727;
+
+  --info: #4779A8;
+  --info-bg: #EDF4FA;
+  --info-foreground: #254B6E;
+
+  /* Gráficos de Evolução Renal */
+  --chart-1: #367C83; /* Petróleo Primário / TFGe */
+  --chart-2: #B95353; /* Alerta / Creatinina */
+  --chart-3: #3F8068; /* Estabilidade Clínica */
+  --chart-4: #A97732; /* Sinais Limítrofes */
+  --chart-5: #687780; /* Referência */
+
+  --radius: 0.625rem; /* 10px moderado */
+
+  /* Sidebar e Menus */
+  --sidebar: #1E2930;
+  --sidebar-foreground: #F7F9FA;
+  --sidebar-primary: #367C83;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #283740;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #283740;
+  --sidebar-ring: #367C83;
+
+  /* Tipografia: Poppins como primária + Inter para dados densos */
+  --font-sans: var(--font-poppins), var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+  --font-data: var(--font-inter), var(--font-poppins), sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    color-scheme: light;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Utilitários de Acessibilidade e Dados Clínicos */
+.tabular-clinical {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 transition-shadow;
+}
+
+/* Sombra suave e elegante para cards de SaaS médico */
+.card-subtle {
+  box-shadow: 0 1px 3px 0 rgba(36, 50, 58, 0.03), 0 1px 2px -1px rgba(36, 50, 58, 0.02);
+}
+
+.card-elevated {
+  box-shadow: 0 4px 12px -2px rgba(36, 50, 58, 0.06), 0 2px 6px -1px rgba(36, 50, 58, 0.03);
+}

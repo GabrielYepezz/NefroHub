@@ -1,0 +1,1523 @@
+{
+  "config": {
+    "argv": [
+      "/home/gabrielyepez/.nvm/versions/node/v24.13.0/bin/node",
+      "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/playwright.config.ts",
+    "rootDir": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e",
+        "snapshotDir": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "headless": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "01-auth-and-access-control.spec.ts",
+      "file": "01-auth-and-access-control.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo E2E 01: Autenticação, Sessões e Controle de Acesso (PRD Seções 2, 4.5 e 15)",
+          "file": "01-auth-and-access-control.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RF-010: Tentativa de login com credenciais incorretas exibe mensagem e mantém na tela",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5554,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:15.879Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "049628aef50cade1e8b8-946ca320f9b0b7f7b8dc",
+              "file": "01-auth-and-access-control.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "RF-010: Médico com status PENDING_APPROVAL tem login bloqueado com aviso",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4065,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:23.520Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "049628aef50cade1e8b8-42520f12b3915db03ae6",
+              "file": "01-auth-and-access-control.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "RF-010: Bloqueio de rotas protegidas sem sessão autenticada",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2303,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:27.629Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "049628aef50cade1e8b8-42eff199f96fc4325ab1",
+              "file": "01-auth-and-access-control.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "RF-002: Login do Administrador redireciona com sucesso para /admin",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5934,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:29.991Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "049628aef50cade1e8b8-ea896b1cf9bd131cc0ba",
+              "file": "01-auth-and-access-control.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "RF-008: Interface de Recuperação de Senha com proteção contra enumeração de contas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2583,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:35.964Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "049628aef50cade1e8b8-38cd6e757b164d6fa28d",
+              "file": "01-auth-and-access-control.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "RF-008: Modo de Redefinição de Nova Senha (?recovery=true) exibe campos de senha",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1862,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[cleanupE2ETestData] Limpeza automática suspensa por segurança no banco compartilhado para: e2e-auth-1793377155846\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:38.591Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "049628aef50cade1e8b8-978af9f8ef128fdcb33b",
+              "file": "01-auth-and-access-control.spec.ts",
+              "line": 91,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "02-admin-governance-and-queues.spec.ts",
+      "file": "02-admin-governance-and-queues.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo E2E 02: Governança Administrativa, Filas 1 a 5 e Auditoria (PRD Seções 2.3, 4, 6.5, 7.3, 15.4)",
+          "file": "02-admin-governance-and-queues.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RF-001: Cadastro Institucional de Médico pelo Administrador em /admin/medicos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14770,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:40.578Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ab26afe7ab71142a05a-a063a04408066d412ceb",
+              "file": "02-admin-governance-and-queues.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "RF-002 e RF-041: Fila 1 - Homologação de Médico e Ativação no Corpo Clínico",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:19:55.386Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ab26afe7ab71142a05a-35fd05b2cd400dd7d06e",
+              "file": "02-admin-governance-and-queues.spec.ts",
+              "line": 52,
+              "column": 7
+            },
+            {
+              "title": "RF-042: Fila 2 - Interface de Vínculos e Representações",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7552,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:02.628Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ab26afe7ab71142a05a-6082be7e3782b0a9e396",
+              "file": "02-admin-governance-and-queues.spec.ts",
+              "line": 70,
+              "column": 7
+            },
+            {
+              "title": "RF-044: Fila 4 - Visualização da Fila de Retificações (review_requests)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6971,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:10.206Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ab26afe7ab71142a05a-f378ac7036b68320aa69",
+              "file": "02-admin-governance-and-queues.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "RF-045: Fila 5 - Interface de Destinação e Descarte com botões operacionais corrigidos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5248,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:17.204Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ab26afe7ab71142a05a-1f1ebec53e5c89e33fae",
+              "file": "02-admin-governance-and-queues.spec.ts",
+              "line": 92,
+              "column": 7
+            },
+            {
+              "title": "RF-071 e RF-072: Trilha de Auditoria Append-Only em /admin/auditoria",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5288,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[cleanupE2ETestData] Limpeza automática suspensa por segurança no banco compartilhado para: e2e-admin-1793377180575\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:22.471Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ab26afe7ab71142a05a-9a998452eb5bb3516f64",
+              "file": "02-admin-governance-and-queues.spec.ts",
+              "line": 103,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-patient-portal-and-submissions.spec.ts",
+      "file": "03-patient-portal-and-submissions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo E2E 03: Portal do Paciente, Aferições Domiciliares e Representação (PRD Seções 3, 5, 6, 8.3)",
+          "file": "03-patient-portal-and-submissions.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RF-026: Dashboard do Paciente exibe métricas e identificação do titular",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4158,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:27.799Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "81663f0d11a9c278d62d-b4018c9353c750df464b",
+              "file": "03-patient-portal-and-submissions.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "RF-032 e RF-033: Submissão domiciliar de sinais vitais e bloqueio de edição direta",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6483,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:33.813Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "81663f0d11a9c278d62d-2b87b21660b2f27f65c3",
+              "file": "03-patient-portal-and-submissions.spec.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "RF-039: Solicitação de retificação (Pedir Correção) na aba de medições confirmadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7952,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:40.307Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "81663f0d11a9c278d62d-360b41ad9647dc9f4508",
+              "file": "03-patient-portal-and-submissions.spec.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "RF-024: Solicitação de representação legal / cuidador via modal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6313,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[cleanupE2ETestData] Limpeza automática suspensa por segurança no banco compartilhado para: e2e-pat-1793377227798\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:48.272Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "81663f0d11a9c278d62d-9467eaa43fc9b9d28184",
+              "file": "03-patient-portal-and-submissions.spec.ts",
+              "line": 122,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+      "file": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo E2E 04: Prontuário Médico, Calculadora CKD-EPI 2021 e Curadoria Clínica (PRD Seções 2.3, 4.1, 6, 8, 10)",
+          "file": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RF-022: Painel do Médico exibe pacientes vinculados e busca clínica",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3655,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:54.622Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8035a3ea37204dbfeaf2-ecc59fd56dab84f18b26",
+              "file": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "RF-062 e RF-049: Lançamento de Exame com Cálculo Automático CKD-EPI 2021",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7027,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:20:59.987Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8035a3ea37204dbfeaf2-acdcb26230e2f375a4e2",
+              "file": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "RF-034: Curadoria Médica de Submissão Domiciliar Pendente com Confirmação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5504,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:07.027Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8035a3ea37204dbfeaf2-e3afc27722ee9f9484f3",
+              "file": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+              "line": 101,
+              "column": 7
+            },
+            {
+              "title": "RF-057: Visualização da Curva de Evolução Longitudinal Renal (Recharts)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5580,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[cleanupE2ETestData] Limpeza automática suspensa por segurança no banco compartilhado para: e2e-doc-1793377254622\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:12.543Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8035a3ea37204dbfeaf2-929debf4ceb45259dba7",
+              "file": "04-doctor-clinical-care-and-ckd-epi.spec.ts",
+              "line": 117,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-clinical-documents-and-curation.spec.ts",
+      "file": "05-clinical-documents-and-curation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo E2E 05: Documentos Clínicos, Upload e Curadoria de Laudos (PRD Seção 11)",
+          "file": "05-clinical-documents-and-curation.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RF-066 e RF-067: Upload de Laudo em PDF pelo Paciente com Validação de Magic Bytes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7058,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:18.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "69fe8e7c816ba9b25e51-babdb645d2fb13ddbd7f",
+              "file": "05-clinical-documents-and-curation.spec.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "RF-069 e RF-070: Curadoria Médica de Laudo Anexado com Emissão de URL Assinada",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4031,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[cleanupE2ETestData] Limpeza automática suspensa por segurança no banco compartilhado para: e2e-docu-1793377278153\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:27.087Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "69fe8e7c816ba9b25e51-fd8c9dad76c93eb4de5f",
+              "file": "05-clinical-documents-and-curation.spec.ts",
+              "line": 69,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+      "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Rodada Completa de Validação E2E Ponta a Ponta (E2E-01 a E2E-10)",
+          "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+          "line": 16,
+          "column": 15,
+          "specs": [
+            {
+              "title": "E2E-01: Cadastro de Paciente e Validações de Pré-cadastro",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4843,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:31.156Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-593b2d06c2215b3070cb",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 60,
+              "column": 7
+            },
+            {
+              "title": "E2E-02: Homologação e Ativação Administrativa com Auditoria",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9235,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:38.624Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-6344e06da8a6e70117a8",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "E2E-03: Login do Paciente e Controle Estrito de Acesso RBAC",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7231,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:47.871Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-9298ea72fc8ec93f287d",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 156,
+              "column": 7
+            },
+            {
+              "title": "E2E-04: Login Médico e Verificação de MFA/TOTP (AAL1 vs AAL2)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4228,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:55.111Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-3a6417b44d60d51dbcce",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 177,
+              "column": 7
+            },
+            {
+              "title": "E2E-05: Vínculo Clínico Médico-Paciente e Isolamento Zero-Trust",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6577,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:21:59.351Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-73199ed1a9f1e21dae9c",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 197,
+              "column": 7
+            },
+            {
+              "title": "E2E-06: Registro Clínico Domiciliar em Estado Pendente de Curadoria",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7290,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:22:05.940Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-a260cec2b880fbdf718f",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 220,
+              "column": 7
+            },
+            {
+              "title": "E2E-07: Curadoria Médica, Confirmação e Garantia de Imutabilidade",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:22:13.242Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-fc4d0293acee93d1d574",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 259,
+              "column": 7
+            },
+            {
+              "title": "E2E-08: Upload de Laudo em Storage Privado e Curadoria com URL Assinada",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:22:17.810Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-9250632f380375936848",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 299,
+              "column": 7
+            },
+            {
+              "title": "E2E-09: Solicitação de Retificação e Nova Versão Encadeada (Fila 4)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12250,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:22:28.601Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-7f674e5ff0800ff2c32f",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 345,
+              "column": 7
+            },
+            {
+              "title": "E2E-10: Logout Seguro e Invalidação Total da Sessão",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                        "line": 16,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5931,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[cleanupE2ETestData] Limpeza automática suspensa por segurança no banco compartilhado para: e2e-cycle-1793377291155\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-30T16:22:40.865Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/gabrielyepez/Documentos/Programs/nefrohub/nefrohub-web/tests/e2e/06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+                            "line": 16,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b6452d85ea76d3e9806-5eb9ea3d5d0ed51ad222",
+              "file": "06-full-lifecycle-e2e01-to-e2e10.spec.ts",
+              "line": 404,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-30T16:19:13.372Z",
+    "duration": 214186.073,
+    "expected": 32,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
